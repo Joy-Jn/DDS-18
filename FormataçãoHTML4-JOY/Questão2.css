@@ -1,0 +1,51 @@
+.bg-lightblue {
+    background-color: lightblue;
+    padding: 20px;
+    margin: 20px;
+}
+
+.bg-lightgreen {
+    background-color: lightgreen;
+    padding: 20px;
+    margin: 20px;
+}
+
+.bg-image-repeat {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Alexandre_Cabanel_-_Fallen_Angel.jpg/1200px-Alexandre_Cabanel_-_Fallen_Angel.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    padding: 200px;
+    margin: 10px;
+}
+
+.bg-image-vertical {
+    background-image: url(https://mymodernmet.com/wp/wp-content/uploads/2021/10/famous-renaissance-paintings-thumbnail.jpg);
+    background-repeat: repeat-y;
+    padding: 200px;
+    margin: 10px;
+}
+
+.bg-image-norepeat {
+    background-image: url(https://luxurycolumnist.com/wp-content/uploads/2022/01/Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel.jpg);
+    background-repeat: no-repeat;
+    padding: 200px;
+    margin: 10px;
+}
+
+.bg-image-center-norepeat {
+    background-image: url(https://i.pinimg.com/736x/4d/49/f2/4d49f293bb55207d7a71788b18756856.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 200px;
+    margin: 10px;
+}
+
+.bg-yellow-image-fixed {
+    background-color: yellow;
+    background-image: url(https://miro.medium.com/v2/resize:fit:1400/0*VMM4Hd5Ahiu2MQ3m);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 200px;
+    margin: 10px;
+}
