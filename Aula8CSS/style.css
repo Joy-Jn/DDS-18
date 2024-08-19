@@ -1,0 +1,41 @@
+body{
+    background-color: gray;
+    height: 600px;
+}
+
+#tudo{
+    background-color: rgb(22, 179, 74);
+    padding: 5px;
+    display: inline-block;
+    display: flex;
+}
+
+.quad{
+    height: 200px;
+    width: 200px;
+}
+
+#quad1{
+    background-color: red;
+    
+}
+
+#quad2{
+    background-color: aqua;
+}
+
+#quad3{
+    background-color: black;
+}
+
+#container{
+    background-color: rgb(22, 179, 74);
+    padding: 5px;
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
