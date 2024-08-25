@@ -4,14 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SenaiVitória.com</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-    <header style="width: 100%; height: 100px; background-color: rgb(32, 41, 173);">
+    <header>
+        <img src="https://loja.senaies.com.br/static/media/SenaiLogoBranco.d0fd9b85.svg" alt="Logo" class="logo">
+        <nav>
+            <a href="#cursos" class="botao">CURSOS</a>
+            <a href="pagina_sobre_nos.html" class="botao sobre-nos">SOBRE-NÓS</a>
+            <a href="pagina_cadastro.html" class="botao cadastre-se">CADASTRE-SE</a>
+        </nav>
+        <div class="icones">
+            <i class="fas fa-user"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </header>
 
-    <img src="https://loja.senaies.com.br/static/media/SenaiLogoBranco.d0fd9b85.svg" alt="Logo">
+    <main>
+        <section class="descricao">
+            <img src="https://admin.loja.senaies.com.br/pub/media/catalog/tmp/category/iniciacao_1_.jpg" alt="Descrição da Imagem" class="Senai-Pessoas">
+            <div class="texto-descricao">
+                <h2>Conheça os cursos</h2>
+                <h3>INICIAÇÃO PROFISSIONAL</h3>
+                <p>Os cursos de aperfeiçoamento profissional do Senai são pensados para você ampliar e complementar as suas competências para o trabalho e possuem uma carga horária variável de acordo com a área pretendida para aprimoramento dos conhecimentos. Para participar da formação, é preciso comprovar formação anterior ou conhecimento prévio de profissão relacionada ao curso.</p>
+            </div>
+        </section>
 
+        <section class="cards" id="cursos">
+            <div class="card">
+                <img src="https://admin.loja.senaies.com.br/pub/media/catalog/product//m/e/mecanica_automotiva_b_sica_1_1.jpg" alt="Curso 1" class="card-imagem">
+                <div class="card-conteudo">
+                    <h4>MECÂNICA AUTOMOTIVA BÁSICA</h4>
+                    <p><strong>Local:</strong> Colatina </p>
+                    <p><strong>Duração:</strong> 60 Horas </p>
+                    <p><strong>Início:</strong> 17/09/2024 </p>
+                    <p><strong>Modalidade:</strong> Presencial </p>
+                    <p><strong>Preço:</strong> R$ 837,00 </p>
+                    <p><strong>Parcelas:</strong> 2x de R$ 418,00 </p>
+                    <a href="pagina_matricula_mecanica_automotiva.html" class="btn-matricula">Matricule-se</a>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="https://admin.loja.senaies.com.br/pub/media/catalog/product//p/i/pintura_industrial_1_13.jpg" alt="Curso 2" class="card-imagem">
+                <div class="card-conteudo">
+                    <h4>PINTURA INDUSTRIAL</h4>
+                    <p><strong>Local:</strong> São Mateus </p>
+                    <p><strong>Duração:</strong> 60 horas </p>
+                    <p><strong>Início:</strong> 09/09/2024 </p>
+                    <p><strong>Modalidade:</strong> Presencial </p>
+                    <p><strong>Preço:</strong> R$ 650,00 </p>
+                    <p><strong>Parcelas:</strong> 1x de R$ 650,00 </p>
+                    <a href="pagina_matricula_pintura_industrial.html" class="btn-matricula">Matricule-se</a>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="https://admin.loja.senaies.com.br/pub/media/catalog/product//i/n/instalacoes_1.jpg" alt="Curso 3" class="card-imagem">
+                <div class="card-conteudo">
+                    <h4>FUNDAMENTOS DA CONSTRUÇÃO CIVIL INSTALAÇÕES</h4>
+                    <p><strong>Local:</strong> Vitória </p>
+                    <p><strong>Duração:</strong> 50 horas </p>
+                    <p><strong>Início:</strong> 27/08/2024 </p>
+                    <p><strong>Modalidade:</strong> Presencial </p>
+                    <p><strong>Preço:</strong> R$ 259,00 </p>
+                    <p><strong>Parcelas:</strong> 1x de R$ 259,00 </p>
+                    <a href="pagina_matricula_construcao_civil.html" class="btn-matricula">Matricule-se</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logos">
+            <img src="https://loja.senaies.com.br/static/media/SenaiLogoBranco.d0fd9b85.svg" alt="Logo Senai" class="logo-senai">
+            <img src="https://loja.senaies.com.br/static/media/FindesLogoBranco.7068c4eb.svg" alt="Logo Findes" class="logo-findes">
+        </div>
     
+        <div class="footer-section redes-sociais">
+            <h4>Redes Sociais</h4>
+            <p><i class="fab fa-facebook-f"></i> /SenaiEs</p>
+            <p><i class="fab fa-instagram"></i> @senaies</p>
+            <p><i class="fab fa-youtube"></i> SENAIES.Oficial</p>
+        </div>
+    
+        <div class="footer-section sac">
+            <h4>SAC - Serviço de Atendimento ao Cliente</h4>
+            <p><i class="fas fa-at"></i> Fale Conosco</p>
+            <p><i class="fas fa-question-circle"></i> Perguntas Frequentes</p>
+            <p><i class="fas fa-phone"></i> Telefone: 0800 102 08080</p>
+            <p><i class="fas fa-clock"></i> Horário de funcionamento: Segunda a Sexta-feira, das 7h às 19h. Exceto feriados nacionais e locais.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
+
+
+

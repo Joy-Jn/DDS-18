@@ -1,0 +1,423 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    padding-top: 100px;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(32, 41, 173);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+.botao {
+    padding: 10px 20px;
+    background-color: rgb(69, 191, 214);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.icones {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icones i {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.icones i:hover {
+    color: rgb(69, 191, 214);
+}
+
+/* Estilos para a seção de descrição */
+.descricao {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+}
+
+.Senai-Pessoas {
+    width: 50%;
+    object-fit: cover;
+}
+
+.texto-descricao {
+    max-width: 50%;
+}
+
+.texto-descricao h2 {
+    font-size: 20px;
+    color: rgb(69, 191, 214);
+    margin-bottom: 10px;
+}
+
+.texto-descricao h3 {
+    font-size: 25px;
+    color: rgb(32, 41, 173);
+    margin-bottom: 10px;
+}
+
+.texto-descricao p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Estilos para os cards */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center; /* Centraliza os cards horizontalmente */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(33.333% - 40px); /* Ajusta para três cards por linha */
+    margin: 10px; /* Adiciona margem entre os cards */
+}
+
+.card-imagem {
+    width: 100%;
+    height: auto;
+}
+
+.card-conteudo {
+    padding: 15px;
+}
+
+.card-conteudo h4 {
+    font-size: 18px;
+    color: rgb(32, 41, 173);
+    margin-bottom: 10px;
+}
+
+.card-conteudo p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.btn-matricula {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: rgb(69, 191, 214);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btn-matricula:hover {
+    background-color: rgb(32, 41, 173);
+}
+
+/* Estilos para o rodapé */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Ajusta o alinhamento vertical dos itens */
+    background-color: rgb(32, 41, 173);
+    color: white;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Logo Senai e Findes */
+.footer-logos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.footer-logos img {
+    width: 150px;
+}
+
+/* Redes Sociais e SAC */
+.footer-section {
+    flex: 1;
+}
+
+.redes-sociais,
+.sac {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes-sociais h4,
+.sac h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: rgb(69, 191, 214);
+}
+
+.redes-sociais p,
+.sac p {
+    margin-bottom: 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.redes-sociais i,
+.sac i {
+    font-size: 16px;
+}
+
+.sac {
+    align-items: flex-start; /* Alinha o conteúdo do SAC ao topo */
+}
+
+
+@media (max-width: 768px) {
+    .descricao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Senai-Pessoas {
+        width: 100%;
+    }
+
+    .texto-descricao {
+        max-width: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos Gerais */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: rgb(32, 41, 173);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    width: 120px;
+}
+
+header nav {
+    display: flex;
+    gap: 1rem;
+}
+
+header nav .botao {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav .botao:hover {
+    background-color: rgb(251, 89, 9);
+}
+
+header .icones {
+    display: flex;
+    gap: 1rem;
+}
+
+header .icones i {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* Estilos do Main */
+
+main {
+    margin-top: 80px; /* Espaço para o cabeçalho fixo */
+    padding: 2rem;
+}
+
+.descricao-curso {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-detalhado {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card-imagem-detalhada {
+    width: 100%;
+    height: auto;
+}
+
+.card-conteudo-detalhado {
+    padding: 1rem;
+}
+
+.card-conteudo-detalhado h4 {
+    margin-top: 0;
+    color: rgb(32, 41, 173);
+}
+
+.card-conteudo-detalhado p {
+    margin: 0.5rem 0;
+}
+
+.card-conteudo-detalhado h5 {
+    margin-top: 1rem;
+    color: #444;
+}
+
+.card-conteudo-detalhado ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: disc;
+    margin-left: 1.5rem;
+}
+
+.btn-matricula-detalhado {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: rgb(69, 191, 214);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-matricula-detalhado:hover {
+    background-color: rgb(32, 41, 173);
+}
+
+/* Estilos para o rodapé */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Ajusta o alinhamento vertical dos itens */
+    background-color: rgb(32, 41, 173);
+    color: white;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Logo Senai e Findes */
+.footer-logos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.footer-logos img {
+    width: 150px;
+}
+
+/* Redes Sociais e SAC */
+.footer-section {
+    flex: 1;
+}
+
+.redes-sociais,
+.sac {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes-sociais h4,
+.sac h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: rgb(69, 191, 214);
+}
+
+.redes-sociais p,
+.sac p {
+    margin-bottom: 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.redes-sociais i,
+.sac i {
+    font-size: 16px;
+}
+
+.sac {
+    align-items: flex-start; /* Alinha o conteúdo do SAC ao topo */
+}
+
+
