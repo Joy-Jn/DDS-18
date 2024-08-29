@@ -6,69 +6,48 @@
     <title>Cadastro - SENAI</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        
-        .container-cadastro {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: calc(100vh - 70px); 
-            padding: 20px;
-        }
-        .card-cadastro {
-            width: 100%;
-            max-width: 600px;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-        }
-        .card-cadastro h2 {
-            margin-bottom: 20px;
-            font-size: 24px;
-            text-align: center;
-        }
-        .card-cadastro .form-group {
-            margin-bottom: 15px;
-        }
-        .card-cadastro .form-group label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        .card-cadastro .form-group input {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-        .card-cadastro .form-group input[type="submit"] {
-            background-color: #007BFF;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-            padding: 15px;
-        }
-        .card-cadastro .form-group input[type="submit"]:hover {
-            background-color: #0056b3;
-        }
-    </style>
+  
 </head>
 <body>
     
     <header>
-        <a href="index.html"><img src="https://loja.senaies.com.br/static/media/SenaiLogoBranco.d0fd9b85.svg" alt="Logo" class="logo"></a>
-        <nav>
-            <a href="index.html" class="botao">CURSOS</a>
+
+        <a href="index.html"> <img src="https://loja.senaies.com.br/static/media/SenaiLogoBranco.d0fd9b85.svg" alt="Logo" class="logo"></a>
+        
+        
+        <div class="menu-hamburguer" >
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="menu">
+            <div class="fecharBtn">
+                <div class="iconeFechar"></div>
+            </div>
+            
+            <a href="pagina_sobre_nos.html">SOBRE-NÓS</a>
+            <a href="pagina_cadastro.html">CADASTRE-SE</a>
+        </div>
+        
+        <nav class="nav-mobile">
+            <a href="#cursos" class="botao">CURSOS</a>
             <a href="pagina_sobre_nos.html" class="botao sobre-nos">SOBRE-NÓS</a>
             <a href="pagina_cadastro.html" class="botao cadastre-se">CADASTRE-SE</a>
         </nav>
+
+        <nav>
+            <a href="#cursos" class="botao">CURSOS</a>
+            <a href="pagina_sobre_nos.html" class="botao sobre-nos">SOBRE-NÓS</a>
+            <a href="pagina_cadastro.html" class="botao cadastre-se">CADASTRE-SE</a>
+        </nav>
+
         <div class="icones">
             <i class="fas fa-user"></i>
             <i class="fas fa-heart"></i>
             <i class="fas fa-shopping-cart"></i>
         </div>
+
     </header>
 
     
@@ -119,5 +98,32 @@
             <p><i class="fas fa-clock"></i> Horário de funcionamento: Segunda a Sexta-feira, das 7h às 19h. Exceto feriados nacionais e locais.</p>
         </div>
     </footer>
+
+
+    <script >
+        let menuH = document.querySelector(".menu-hamburguer")
+        let menu = document.querySelector(".menu")
+
+        let closeBtn = document.querySelector(".fecharBtn")
+
+        
+        console.log('1')
+
+
+
+        menuH.addEventListener("click", ()=>{
+            menu.classList.toggle("visivel");
+
+            
+        })
+
+
+        closeBtn.addEventListener("click", ()=>{
+            menu.classList.toggle("visivel");
+            
+
+            
+        })
+    </script>
 </body>
 </html>

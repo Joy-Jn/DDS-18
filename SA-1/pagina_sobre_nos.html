@@ -43,24 +43,145 @@
         .card-sobre-nos .video-historia video {
             width: 100%;
             max-width: 800px;
-            border-radius: 10px;
+            border-radius: 10
+            
+            px;
+        }
+
+
+        .menu{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+
+            background-color: rgb(69, 191, 214);
+
+            /* display: flex; */
+            flex-direction: column;
+
+            justify-content: center;
+            align-items: center;
+
+            display: none;
+
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+
+            padding: 10px;
+
+            gap: 6px;
+
+
+            min-width: 20vw;
+            height: 100%;
+            
+            
+        }
+
+        .fecharBtn{
+            height: 19.25px;
+            background-color: red  !important;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* width: 19.25px; */
+
+            /* position: absolute;
+
+            top: 4px;
+            left: 4px; */
+        }
+
+        .iconeFechar{
+            background-image: url(icones/fechar.png);
+            background-position: center;
+            background-size: cover;
+            
+            height: 16px;
+            width: 16px;
+
+        }
+
+        @media(max-width: 600px){
+            .menu{
+                /* background-color: red; */
+            }
+
+            .menu > *{
+                font-size: 0.8rem !important;
+                text-align: center;
+
+                border-radius: 4px;
+
+                box-shadow: 1px 1px 4px black;
+                
+                background-color: rgb(32, 41, 173);
+
+                color: white;
+            }
+        }
+        
+        .menu > *{
+            text-decoration: none;
+            flex-grow: 1;
+
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .visivel{
+            display: flex;
+        }
+
+        .naoVisivel{
+            display: none !important;
         }
     </style>
 </head>
 <body>
     
     <header>
-        <a href="index.html"><img src="https://loja.senaies.com.br/static/media/SenaiLogoBranco.d0fd9b85.svg" alt="Logo" class="logo"></a>
-        <nav>
-            <a href="index.html" class="botao">CURSOS</a>
+
+       <a href="index.html"> <img src="https://loja.senaies.com.br/static/media/SenaiLogoBranco.d0fd9b85.svg" alt="Logo" class="logo"></a>
+        
+        <div class="menu-hamburguer" >
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="menu">
+            <div class="fecharBtn">
+                <div class="iconeFechar"></div>
+            </div>
+            
+            <a href="pagina_sobre_nos.html">SOBRE-NÓS</a>
+            <a href="pagina_cadastro.html">CADASTRE-SE</a>
+        </div>
+        
+        <nav class="nav-mobile">
+            <a href="#cursos" class="botao">CURSOS</a>
             <a href="pagina_sobre_nos.html" class="botao sobre-nos">SOBRE-NÓS</a>
             <a href="pagina_cadastro.html" class="botao cadastre-se">CADASTRE-SE</a>
         </nav>
+
+        <nav>
+            <a href="#cursos" class="botao">CURSOS</a>
+            <a href="pagina_sobre_nos.html" class="botao sobre-nos">SOBRE-NÓS</a>
+            <a href="pagina_cadastro.html" class="botao cadastre-se">CADASTRE-SE</a>
+        </nav>
+
         <div class="icones">
             <i class="fas fa-user"></i>
             <i class="fas fa-heart"></i>
             <i class="fas fa-shopping-cart"></i>
         </div>
+
     </header>
 
     <main>
@@ -100,10 +221,9 @@
                     A partir de então, o Senai mostra resultados que demonstram o equilíbrio entre o bom desempenho e o estabelecimento das metas, atentando para a demanda sempre crescente. Além de oferecer programas de grande visibilidade e importância para a indústria capixaba. </p>
                 
                 <div class="video-historia">
-                    <video controls>
-                        <source src="caminho/para/seu/video.mp4" type="video/mp4">
-                        Seu navegador não suporta o elemento de vídeo.
-                    </video>
+                    <span>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DHqAVNY0y1E?si=L797B74zjhVLV62s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </span>
                 </div>
             </div>
         </div>
@@ -130,5 +250,33 @@
             <p><i class="fas fa-clock"></i> Horário de funcionamento: Segunda a Sexta-feira, das 7h às 19h. Exceto feriados nacionais e locais.</p>
         </div>
     </footer> 
+
+
+
+    <script >
+        let menuH = document.querySelector(".menu-hamburguer")
+        let menu = document.querySelector(".menu")
+
+        let closeBtn = document.querySelector(".fecharBtn")
+
+        
+        console.log('1')
+
+
+
+        menuH.addEventListener("click", ()=>{
+            menu.classList.toggle("visivel");
+
+            
+        })
+
+
+        closeBtn.addEventListener("click", ()=>{
+            menu.classList.toggle("visivel");
+            
+
+            
+        })
+    </script>
 </body>
 </html>
