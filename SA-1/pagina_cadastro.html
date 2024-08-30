@@ -14,7 +14,6 @@
 
         <a href="index.html"> <img src="https://loja.senaies.com.br/static/media/SenaiLogoBranco.d0fd9b85.svg" alt="Logo" class="logo"></a>
         
-        
         <div class="menu-hamburguer" >
             <div></div>
             <div></div>
@@ -78,6 +77,7 @@
 
    
     <footer>
+
         <div class="footer-logos">
             <img src="https://loja.senaies.com.br/static/media/SenaiLogoBranco.d0fd9b85.svg" alt="Logo Senai" class="logo-senai">
             <img src="https://loja.senaies.com.br/static/media/FindesLogoBranco.7068c4eb.svg" alt="Logo Findes" class="logo-findes">
@@ -97,33 +97,30 @@
             <p><i class="fas fa-phone"></i> Telefone: 0800 102 08080</p>
             <p><i class="fas fa-clock"></i> Horário de funcionamento: Segunda a Sexta-feira, das 7h às 19h. Exceto feriados nacionais e locais.</p>
         </div>
+
     </footer>
 
 
     <script >
+
         let menuH = document.querySelector(".menu-hamburguer")
         let menu = document.querySelector(".menu")
 
         let closeBtn = document.querySelector(".fecharBtn")
 
-        
         console.log('1')
-
-
 
         menuH.addEventListener("click", ()=>{
             menu.classList.toggle("visivel");
 
-            
         })
-
 
         closeBtn.addEventListener("click", ()=>{
             menu.classList.toggle("visivel");
             
-
-            
         })
+
     </script>
+    
 </body>
 </html>
